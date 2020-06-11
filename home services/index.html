@@ -17,26 +17,40 @@
     <body>
             
         <!-- Navigation bar --> <!-- Location fixed--> <!-- Dropdown menu on services -->
-        <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand navbar-light bg-light sticky-top">
             <a class="navbar-brand" href="#">
-                <img src="./img/icon.jpg">
+                <img src="./img/icon.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
                     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <nav class="navbar-nav mr-auto">
-                    <a class="nav-link active font-weight-normal " href="./index.html">Home</a>
-                    <a class="nav-link font-weight-normal" href="#">Services</a> 
-                    <a class="nav-link font-weight-normal" href="#">Log In</a>
-                    <a class="nav-link font-weight-normal" href="#">Sign Up</a>
+                    <a class="nav-link h5 active font-weight-bold px-5" href="./index.html">Home</a>
+                    <div class="dropdown">
+                        <a class="nav-link h5 font-weight-bold px-5 dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="html/services-home.html">
+                            Services
+                        </a> 
+                        
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item h6 py-3" href="html/plumber.html">Plumber</a>
+                            <a class="dropdown-item h6 py-3" href="html/carpentor.html">Carpentor</a>
+                            <a class="dropdown-item h6 py-3" href="html/electrical-services.html">Electrical Services</a>
+                            <a class="dropdown-item h6 py-3" href="html/ac-repairs.html">AC Repair</a>
+                        </div>
+                    </div>
+                    <a class="nav-link h5 font-weight-bold px-5" href="html/login.html">Log In</a>
+                    <a class="nav-link h5 font-weight-bold px-5" href="html/sign-up.html">Sign Up</a>
                 </nav>
             </div>
         </nav> <!-- navigation-bar -->
         
         <!-- can be any good image here --> <!-- write up about home services site. can be good if its creative -->
-        <img src="img/index-page-background.jpg" height=600px width=100%>
+        <div class="row">
+            <div class="col">
+                <img src="img/index-page-background.jpg" width=100% height="600px">
+            </div>
+       </div>
         
-       
         <!-- Container -->
         <div class="container">
             
@@ -51,7 +65,7 @@
             <!--Why Home Services -->
             <div class="row">
                 <div class="col">
-                    <h2 class="text-center display-4 my-4">Why Home Services?</h2>
+                    <h2 class="text-center display-4 my-5">Why Home Services?</h2>
                 </div>
             </div> <!-- Why Home Services -->
             
